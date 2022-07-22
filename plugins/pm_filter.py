@@ -943,7 +943,7 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ PM! 🤖", url=f"https://t.me/{temp.U_NAME}")]
         )
         btn.append(
-            [InlineKeyboardButton(f'🚫 ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ 🚫', 'dupe')]
+            [InlineKeyboardButton(f'🚫 ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ 🚫', callback_data='close_pages')]
         )
 
     btn.insert(0, [
