@@ -116,7 +116,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="seriess"),
                 InlineKeyboardButton(text=f"Cʜᴇᴄᴋ PM!", url=f"https://t.me/{temp.U_NAME}"),
-                InlineKeyboardButton("🗄 ғɪʟᴇ𝐬:", url="https://t.me/MovieHub_OTT")
+                InlineKeyboardButton(f'🗄 ғɪʟᴇ𝐬: {total_results}', 'dupe')
             ])
 
     btn.insert(0, [
@@ -943,7 +943,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, [
         InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="seriess"),
-        InlineKeyboardButton("🗄 ᴛᴏᴛᴀʟ ғɪʟᴇ𝐬:", url="https://t.me/MovieHub_OTT")
+        InlineKeyboardButton(f'🗄 ᴛᴏᴛᴀʟ ғɪʟᴇ𝐬: {total_results}', 'dupe')
     ])
     btn.insert(0, [
         InlineKeyboardButton(f"🎬 {search} 🎬",callback_data="moviess")
