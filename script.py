@@ -339,12 +339,12 @@ Total Members = <code>{}</code>
 Added By - {}
 """
 
-    LOG_TEXT_P = """#NewUser Detected 
+    LOG_TEXT_P = """🕵#NewUser Detected 
 
 #ID{}
 Name - 👀 {}
-
-Bot - <b><a href=https://t.me/MHChatsBot>Eᴍɪʟɪᴀ Cʟᴀʀᴋᴇ</a></b><b>"""
+     - {}
+🇧​​​​​🇴​​​​​🇹​​​​​ - <b><a href=https://t.me/MHProBot>ᴇᴍᴍᴀ ᴡᴀᴛsᴏɴ</a></b><b>"""
 
     ZOMBIES_TXT = """Help: <b>Zombies</b>
 
