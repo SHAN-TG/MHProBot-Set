@@ -116,7 +116,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="seriess"),
                 InlineKeyboardButton(text=f"Cʜᴇᴄᴋ PM!", url=f"https://t.me/{temp.U_NAME}"),
-                InlineKeyboardButton(f'🗄 ғɪʟᴇ𝐬: {total_results}', 'dupe')
+                InlineKeyboardButton(text=f"🗄 ғɪʟᴇ𝐬:", url=f"https://t.me/{temp.U_NAME}")
             ])
 
     btn.insert(0, [
@@ -875,9 +875,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
     elif query.data == 'moviess':
-        await query.answer("ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴀsᴛᴇʀ ᴏʀ ᴍᴀsᴛᴇʀ 2021\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
+        await query.answer("Click on the files you want and then click on the Cʜᴇᴄᴋ PM! button..\n\nSending files to your bot 🤖\n\n🇨​​​​​🇭​​​​​🇪​​​​​🇨​​​​​🇰​​​​​ 🇵​​​​​🇲", True)
     elif query.data == 'seriess':
-        await query.answer("sᴇʀɪᴇs ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ sᴇʀɪᴇs ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : Alive ᴏʀ Alive S01E01\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
+        await query.answer("The files you click on the button in this post will go to Bot PM. So Cʜᴇᴄᴋ PM!..\n\nAғᴛᴇʀ 5 Mɪɴᴜᴛᴇs Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑", True)
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -942,8 +942,8 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="seriess"),
-        InlineKeyboardButton(f'🗄 ᴛᴏᴛᴀʟ ғɪʟᴇ𝐬: {total_results}', 'dupe')
+        InlineKeyboardButton(f'🗄 ᴛᴏᴛᴀʟ ғɪʟᴇ𝐬: {total_results}', 'dupe'),
+        InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="seriess")
     ])
     btn.insert(0, [
         InlineKeyboardButton(f"🎬 {search} 🎬",callback_data="moviess")
