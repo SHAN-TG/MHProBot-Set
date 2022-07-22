@@ -70,7 +70,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📂 {get_size(file.file_size)} {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📂 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -114,9 +114,9 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton(f"⚠️ Iɴғᴏ ❗️",callback_data="seriess"),
+                InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="seriess"),
                 InlineKeyboardButton(text=f"Cʜᴇᴄᴋ PM!", url=f"https://t.me/{temp.U_NAME}"),
-                InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="tipss")
+                InlineKeyboardButton(f"𝐓ɪᴘ𝐬💡",callback_data="tipss")
             ])
 
     btn.insert(0, [
@@ -941,6 +941,10 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="【1 ⑅ 1】", callback_data="pages"),
              InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ PM! 🤖", url=f"https://t.me/{temp.U_NAME}")]
+        )
+    else:
+        btn.append(
+            [InlineKeyboardButton(text="🚫 ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ 🚫", 'dupe')]
         )
 
     btn.insert(0, [
