@@ -116,7 +116,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f"⚠️ Iɴғᴏ ❗️",callback_data="seriess"),
                 InlineKeyboardButton(text=f"Cʜᴇᴄᴋ PM!", url=f"https://t.me/{temp.U_NAME}"),
-                InlineKeyboardButton(f"files :{total_results}",callback_data="moviess")
+                InlineKeyboardButton(f"⚠️ Iɴғᴏ ⚠️",callback_data="tipss")
             ])
 
     btn.insert(0, [
@@ -878,6 +878,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Click on the files you want and then click on the Cʜᴇᴄᴋ PM! button..\n\nSending files to your bot 🤖\n\n🇨​​​​​🇭​​​​​🇪​​​​​🇨​​​​​🇰​​​​​ 🇵​​​​​🇲", True)
     elif query.data == 'seriess':
         await query.answer("The files you click on the button in this post will go to Bot PM. So Cʜᴇᴄᴋ PM!..\n\nAғᴛᴇʀ 5 Mɪɴᴜᴛᴇs Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑", True)
+    elif query.data == 'tipss':
+        await query.answer("🔰 Ask with correct spelling\n🔰 Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n🔰 For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021\n\tⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
 
 
 async def auto_filter(client, msg, spoll=False):
