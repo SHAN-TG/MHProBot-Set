@@ -482,7 +482,7 @@ async def settings(client, message):
 )
 async def report(bot, message):
     buttons = [[
-        InlineKeyboardButton('✅ Rᴇᴘᴏʀᴛ Sᴇɴᴛ Sᴜᴄᴄᴇssꜰᴜʟ ✅', callback_data='close_pages')
+        InlineKeyboardButton('✅ Rᴇᴘᴏʀᴛ Sᴇɴᴛ Sᴜᴄᴄᴇssꜰᴜʟ ✅', callback_data='close_data')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     k = await message.reply_sticker("CAACAgUAAxkBAAEFUA1i1n4gT-8J5GJIvBgVLjAIdlVFlwACFQcAAsTjuVbP1j29PKhs4CkE", reply_markup=reply_markup)
