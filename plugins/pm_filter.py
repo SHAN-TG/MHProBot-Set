@@ -70,7 +70,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📂 {get_size(file.file_size)} {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -877,7 +877,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == 'moviess':
         await query.answer("Click on the files you want and then click on the Cʜᴇᴄᴋ PM! button..\n\nSending files to your bot 🤖\n\n🇨​​​​​🇭​​​​​🇪​​​​​🇨​​​​​🇰​​​​​ 🇵​​​​​🇲", True)
     elif query.data == 'seriess':
-        await query.answer("The files you click on the button in this post will go to Bot PM. So Cʜᴇᴄᴋ PM!..\n\nAғᴛᴇʀ 5 Mɪɴᴜᴛᴇs Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑", True)
+        await query.answer("ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ ғᴏʀᴍᴀᴛ\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ/ɪᴍᴅʙ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ/sᴇʀɪᴇs ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀsᴛᴇ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ ᴏʀ ᴀᴠᴀᴛᴀʀ 2009\n\n🚯 ᴅᴏɴᴛ ᴜsᴇ ➠ ':(!,./)\n\nThe files you click on the button in this post will go to Bot PM. So Cʜᴇᴄᴋ PM!..\n\nAғᴛᴇʀ 5 Mɪɴᴜᴛᴇs Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑", True)
 
 
 async def auto_filter(client, msg, spoll=False):
