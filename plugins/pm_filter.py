@@ -116,7 +116,7 @@ async def next_page(bot, query):
             [
                 InlineKeyboardButton(f"⚠️ Iɴғᴏ ❗️",callback_data="seriess"),
                 InlineKeyboardButton(text=f"Cʜᴇᴄᴋ PM!", url=f"https://t.me/{temp.U_NAME}"),
-                InlineKeyboardButton(f'files :{total_results}', 'dupe')
+                InlineKeyboardButton(f"files :{total_results}",callback_data="moviess")
             ])
 
     btn.insert(0, [
