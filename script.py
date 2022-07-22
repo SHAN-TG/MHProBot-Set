@@ -344,7 +344,7 @@ Added By - {}
 #ID{}
 Name - 👀 {}
      - {}
-🇧​​​​​🇴​​​​​🇹​​​​​ - <b><a href=https://t.me/MHProBot>ᴇᴍᴍᴀ ᴡᴀᴛsᴏɴ</a></b><b>"""
+🤖 🇧​​​​​🇴​​​​​🇹​​​​​ - <b><a href=https://t.me/MHProBot>ᴇᴍᴍᴀ ᴡᴀᴛsᴏɴ</a></b><b>"""
 
     ZOMBIES_TXT = """Help: <b>Zombies</b>
 
