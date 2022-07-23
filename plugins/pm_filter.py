@@ -382,7 +382,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton('Gʀᴘs & Cʜɴʟs', url='https://t.me/MH_Linkz'),
-                InlineKeyboardButton('Sʜᴀʀᴇ', url='https://t.me/share/url?url=https://t.me/MHChats')
+                InlineKeyboardButton('Sʜᴀʀᴇ', url='https://t.me/share/url?url=https://t.me/MH_LinkZ')
             ]
             ]
 
@@ -433,7 +433,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [
             [
                 InlineKeyboardButton('Gʀᴘs & Cʜɴʟs', url='https://t.me/MH_Linkz'),
-                InlineKeyboardButton('Sʜᴀʀᴇ', url='https://t.me/share/url?url=https://t.me/MHChats')
+                InlineKeyboardButton('Sʜᴀʀᴇ', url='https://t.me/share/url?url=https://t.me/MH_LinkZ')
             ]
             ]
         await query.answer()
@@ -462,7 +462,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚡️ ᴄʟɪᴄᴋ ᴛᴏ ᴄʟᴏsᴇ ᴛʜɪs ʙᴜᴛᴛᴏɴs ⚡️', callback_data='start'),
             ],[
             InlineKeyboardButton('👑 ᴏᴡɴᴇʀ', callback_data='about'),
-            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', url='https://t.me/MHChats')
+            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', url='https://t.me/+HWpfj6BA_NJmYTll')
             ],[
             InlineKeyboardButton('🎬 ᴄʜᴀɴɴᴇʟ', url='https://t.me/MH_Linkz'),
             InlineKeyboardButton('🔐 ᴄʟᴏsᴇ', callback_data='close_pages')
@@ -513,11 +513,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Gʀᴘ 1', url='https://t.me/MHChats'),
-            InlineKeyboardButton('Gʀᴘ 2', url='https://t.me/MoviesHubGroup2'),
-            InlineKeyboardButton('Gʀᴘ 3', url='https://t.me/CinemaKendram')
+            InlineKeyboardButton('Gʀᴘ 1', url='https://t.me/+HWpfj6BA_NJmYTll'),
+            InlineKeyboardButton('Gʀᴘ 2', url='https://t.me/CinemaKendram'),
+            InlineKeyboardButton('Gʀᴘs & Cʜɴʟs', url='https://t.me/MH_Linkz')
             ],[
-            InlineKeyboardButton('Oᴜʀ Mᴀɪɴ Gʀᴏᴜᴘ', url='https://t.me/MoviesHubGroup2')
+            InlineKeyboardButton('Oᴜʀ Mᴀɪɴ Gʀᴏᴜᴘ', url='https://t.me/+HWpfj6BA_NJmYTll')
             ],[
             InlineKeyboardButton('« Back', callback_data='start'),
             InlineKeyboardButton('Close ✗', callback_data='close_data')
