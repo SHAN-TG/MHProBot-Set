@@ -235,7 +235,7 @@ async def start(client, message):
     buttons = [
         [
             InlineKeyboardButton('Gʀᴘs & Cʜɴʟs', url='https://t.me/MH_Linkz'),
-            InlineKeyboardButton('Sʜᴀʀᴇ', url='https://t.me/share/url?url=https://t.me/MHChats')
+            InlineKeyboardButton('Sʜᴀʀᴇ', url='https://t.me/share/url?url=https://t.me/MH_LinkZ')
         ]
         ]
     await client.send_cached_media(
