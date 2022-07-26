@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('👉🏻 ⚠️ Press me... 🥰 👈🏻', url="https://t.me/MH_Linkz/38")
+                InlineKeyboardButton('👉🏻 ⚠️ Press me... 🥰 👈🏻', url="https://t.me/MH_Linkz/74")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
