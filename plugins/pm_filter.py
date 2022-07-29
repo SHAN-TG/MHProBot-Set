@@ -877,7 +877,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == 'moviess':
         await query.answer("Click on the files you want and then click on the Cʜᴇᴄᴋ PM! button..\n\nSending files to your bot 🤖\n\n🇨​​​​​🇭​​​​​🇪​​​​​🇨​​​​​🇰​​​​​ 🇵​​​​​🇲", True)
     elif query.data == 'seriess':
-        await query.answer("The files you click on the button in this post will go to Bot PM. So Cʜᴇᴄᴋ PM!..\n\nAғᴛᴇʀ 5 Mɪɴᴜᴛᴇs Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑", True)
+        await query.answer("The files you click on the button in this post will go to Bot PM. So Cʜᴇᴄᴋ PM!..\n\nAғᴛᴇʀ 10 Mɪɴᴜᴛᴇs Tʜɪs Mᴇssᴀɢᴇ Wɪʟʟ Bᴇ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ Dᴇʟᴇᴛᴇᴅ 🗑", True)
     elif query.data == 'tipss':
         await query.answer("🔰 Ask with correct spelling\n🔰 Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n🔰 For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021\n\tⒸ ᴍᴏᴠɪᴇ ʜᴜʙ", True)
 
@@ -942,9 +942,6 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="【1 ⑅ 1】", callback_data="pages"),
              InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ PM! 🤖", url=f"https://t.me/{temp.U_NAME}")]
         )
-        btn.append(
-            [InlineKeyboardButton(f'🚫 ᴍᴏʀᴇ ᴘᴀɢᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ 🚫', callback_data='close_pages')]
-        )
 
     btn.insert(0, [
         InlineKeyboardButton(f'📁 ᴛᴏᴛᴀʟ ғɪʟᴇ𝐬: {total_results}', 'dupe'),
@@ -993,25 +990,25 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(300)
+            await asyncio.sleep(600)
             await hehe.delete()
             await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(300)
+            await asyncio.sleep(600)
             await hmm.delete()
             await message.delete()
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_sticker("CAACAgUAAxkBAAEFT-5i1nRPQndTD2RVcHlbHprxiszWcwACwAQAApItsFar8HO_q3Y4SCkE", reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(300)
+            await asyncio.sleep(600)
             await fek.delete()
             await msg.delete()
     else:
         fuk = await message.reply_sticker("CAACAgUAAxkBAAEFT-5i1nRPQndTD2RVcHlbHprxiszWcwACwAQAApItsFar8HO_q3Y4SCkE", reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(300)
+        await asyncio.sleep(600)
         await fuk.delete()
         await msg.delete()
     if spoll:
