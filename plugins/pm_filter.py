@@ -940,7 +940,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         btn.append(
             [InlineKeyboardButton(text="【1 ⑅ 1】", callback_data="pages"),
-             InlineKeyboardButton(text="🤖 Cʜᴇᴄᴋ PM! 🤖", url=f"https://t.me/{temp.U_NAME}")]
+             InlineKeyboardButton(text=" Cʜᴇᴄᴋ PM! ", url=f"https://t.me/{temp.U_NAME}")]
         )
 
     btn.insert(0, [
