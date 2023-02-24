@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://github.com/JOSProjects/IMDb-Movie-Bot",
-    "repository": "https://github.com/SHAN-SN/IMDB-ALL-MH",
+    "repository": "https://github.com/SHAN-TG/MHProBot-Set",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
